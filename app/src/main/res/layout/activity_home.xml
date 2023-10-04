@@ -11,13 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="NAJWA KHAIRUNISA"
-        android:textSize="20dp"
+        android:text="Shandra Sreshta"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,16 +25,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:text="Enjoy Reading our E-book"
-        android:textSize="14dp"
+        android:text="Enjoy Reading Our E-Book"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/textViewUser"
-        tools:ignore="TextSizeCheck" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textViewUser" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -44,53 +40,90 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        app:srcCompat="@drawable/pic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewInfo"
-       />
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfo"
+        app:srcCompat="@drawable/pic" />
 
     <Button
-       android:layout_width="wrap_content"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="24dp"
-        android:backgroundTint="#FE7E07"
-        android:text="click to enter"
-        app:layout_constraintEnd_toEndOf="@id/imageView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/imageView"
-        app:layout_constraintTop_toBottomOf="@id/textViewInfo"/>
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="32dp"
+        android:text="Click to enter"
+        android:backgroundTint="#FFFF00FF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
+        <Button
+            android:id="@+id/buttonMenu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#FFFF99CC"
+            android:text="Book Kit"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonMenu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#FF99ccff"
+            android:text="Reading"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonMenu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFF9900"
+            android:text="Space"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonMenu4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF00ffff"
+            android:text="More"
+            android:textColor="@color/black" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn1"
+    <TextView
+        android:id="@+id/textView6"
+        style="bold"
         android:layout_width="wrap_content"
-        android:layout_height="65dp"
-        android:backgroundTint="#68FFB7"
-        android:text="Book Kid"
-        android:textColor="@color/black"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="350dp"
-        tools:ignore="MissingConstraints">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="RECOMMEND"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    </Button>
+
+
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
